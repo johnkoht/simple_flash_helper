@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in flash_helper.gemspec
+# Specify your gem's dependencies in simple_flash_helper.gemspec
 gemspec

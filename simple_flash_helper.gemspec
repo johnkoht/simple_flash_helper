@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'flash_helper/version'
+require 'simple_flash_helper/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "flash_helper"
-  spec.version       = FlashHelper::VERSION
+  spec.name          = "simple_flash_helper"
+  spec.version       = SimpleFlashHelper::VERSION
   spec.authors       = ["John Koht"]
   spec.email         = ["john@kohactive.com"]
   spec.description   = "Simple Flash Helper and Front-end Utilities"
   spec.summary       = "Simple Flash Helper and Front-end Utilities"
-  spec.homepage      = "http://www.github.com/johnkoht/flash_helper"
+  spec.homepage      = "http://www.github.com/johnkoht/simple_flash_helper"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
