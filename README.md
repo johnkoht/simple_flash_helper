@@ -1,6 +1,34 @@
 # SimpleFlashHelper
 
-TODO: Write a gem description
+Simple Flash Helper is a Rails Flash Helper and Front-end Utility for handling flash messages dynamically.
+
+## USAGE
+
+### HTML Implementation
+
+Usage is simple, just add `flash_helper` in your view, i.e.
+
+    # HAML
+    = flash_helper
+
+    # ERB
+    <%= flash_helper %>
+
+This will automatically created a flash_helper div and add any and all flash messages there. It will use bootstrap classes like .alert .alert-success .alert-error, etc. If you're using bootstrap then it will be nicely stylized. 
+
+
+### JavaScript Methods
+
+You can also use the javascript helpers.
+  
+    // Create a new flash message with javascript
+    flash_helper.create("message goes here!", "success");
+
+You can also clear all of the flash message with:
+
+    flash_helper.clear();
+
+
 
 ## Installation
 
@@ -16,9 +44,6 @@ Or install it yourself as:
 
     $ gem install simple_flash_helper
 
-## Usage
-
-TODO: Write usage instructions here
 
 ## Contributing
 
