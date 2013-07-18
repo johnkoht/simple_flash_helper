@@ -1,0 +1,23 @@
+#flash_helper {
+  position: fixed;
+  width: 700px;
+  top: 5px;
+  left: 50%;
+  margin-left: -350px;
+  z-index: 5101;
+  height: auto;
+}
+
+#flash_helper div {
+  border-radius: 4px;
+  display: block;
+  clear: both;
+  z-index: 5001;
+  height: auto;
+  background-color: rgba(0, 0, 0, .75);
+  margin-bottom:10px;
+  cursor:pointer;
+  padding: 10px;
+  color: $white;
+  text-align: center;
+}
