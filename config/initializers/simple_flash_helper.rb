@@ -1,1 +1,1 @@
-ActionView::Base.send(:include, SimpleFlashHelper)
+ActionView::Base.send(:include, FlashHelper)
