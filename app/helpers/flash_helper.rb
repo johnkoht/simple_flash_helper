@@ -22,7 +22,7 @@ module FlashHelper
       html = html + content_tag(:div, raw(msg + close_alert_btn), :class => "alert #{css_class}") if keys.index key
     end
 
-    return (content_tag :div, html, id: "flash_helper").html_safe
+    return (content_tag :div, html.html_safe, id: "flash_helper").html_safe
   end
 
 end
