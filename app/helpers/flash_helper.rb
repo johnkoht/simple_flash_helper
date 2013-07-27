@@ -25,4 +25,9 @@ module FlashHelper
     return (content_tag :div, html.html_safe, id: "flash_helper").html_safe
   end
 
+  # Generate the html for a close button on alerts and other modules
+  def close_alert_btn
+    content_tag :button, "&times;".html_safe, :class => "close", :'data-dismiss' => "alert"
+  end
+
 end
