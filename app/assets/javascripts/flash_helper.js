@@ -1,3 +1,6 @@
+var close_btn = '<button class="close" data-dismiss="alert">&times;</button>';
+var speed = 4500;
+
 $(document).ready(function() {
   
   // Remove the flash notice on click
@@ -8,7 +11,7 @@ $(document).ready(function() {
   });
 
   // Automatically remove the div after 4.5 seconds
-  $('#flash_helper > div').delay(4500).fadeOut('fast', function(){
+  $('#flash_helper > div').delay(speed).fadeOut('fast', function(){
     $(this).remove();
   });
 
@@ -20,8 +23,8 @@ var flash_helper = {
   // Dynamically create a flash notice
   create: function(message, type){
     var type = type ? "alert-" + type : "alert-success";
-    var $new_message = $('<div class="alert ' + type + '">'+message+'</div>');
-    $new_message.delay(2500).fadeOut('fast', function(){
+    var $new_message = $('<div class="alert ' + type + '">' + message + close_btn + '</div>');
+    $new_message.delay(speed).fadeOut('fast', function(){
       $(this).remove();
     });
     $('#flash_helper').append($new_message)
@@ -30,6 +33,6 @@ var flash_helper = {
   // Clear all the flash notices
   clear: function() {
     $('#flash_helper').html('');
-  }
+  },
 
 };
