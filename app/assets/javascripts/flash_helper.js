@@ -5,9 +5,7 @@ $(document).ready(function() {
   
   // Remove the flash notice on click
   $('#flash_helper > div').live('click', function(e) {
-    $(this).fadeOut(function() {
-      $(this).hide();
-    });
+    $(this).hide();
   });
 
   // Automatically remove the div after 4.5 seconds
