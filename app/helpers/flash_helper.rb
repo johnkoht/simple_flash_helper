@@ -12,7 +12,7 @@ module FlashHelper
     classes = {
       notice: "alert-success",
       alert: "alert-notice",
-      error: "alert-error"
+      error: "alert-danger"
     }
 
     # html from each message

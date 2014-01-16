@@ -4,7 +4,7 @@ var speed = 4500;
 $(document).ready(function() {
   
   // Remove the flash notice on click
-  $('#flash_helper > div').live('click', function(e) {
+  $('#flash_helper').on('click', 'div', function(e) {
     $(this).hide();
   });
 
